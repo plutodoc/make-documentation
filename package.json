@@ -1,0 +1,21 @@
+{
+  "name": "make-documentation",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vitepress build",
+    "build:local": "vitepress build --base /make-documentation/",
+    "dev": "vitepress dev \"--host\"",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "1.0.0-beta.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}
