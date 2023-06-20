@@ -419,5 +419,24 @@ function sidebarGuide() {
         },
       ],
     },
+    {
+      collapsed: false,
+      link: '/guide/conditionals',
+      text: 'Conditional Parts of Makefiles',
+      items: [
+        {
+          link: '/guide/conditional-example',
+          text: 'Example of a Conditional',
+        },
+        {
+          link: '/guide/conditional-syntax',
+          text: 'Syntax of Conditionals',
+        },
+        {
+          link: '/guide/testing-flags',
+          text: 'Conditionals that Test Flags',
+        },
+      ],
+    },
   ]
 }
