@@ -245,5 +245,92 @@ function sidebarGuide() {
         },
       ],
     },
+    {
+      collapsed: false,
+      link: '/guide/recipes',
+      text: 'Writing Recipes in Rules',
+      items: [
+        {
+          link: '/guide/recipe-syntax',
+          text: 'Recipe Syntax',
+        },
+        {
+          link: '/guide/splitting-recipe-lines',
+          text: 'Splitting Recipe Lines',
+        },
+        {
+          link: '/guide/variables-in-recipes',
+          text: 'Using Variables in Recipes',
+        },
+        {
+          link: '/guide/echoing',
+          text: 'Recipe Echoing',
+        },
+        {
+          link: '/guide/execution',
+          text: 'Recipe Execution',
+        },
+        {
+          link: '/guide/one-shell',
+          text: 'Using One Shell',
+        },
+        {
+          link: '/guide/choosing-the-shell',
+          text: 'Choosing the Shell',
+        },
+        {
+          link: '/guide/parallel',
+          text: 'Parallel Execution',
+        },
+        {
+          link: '/guide/parallel-disable',
+          text: 'Disabling Parallel Execution',
+        },
+        {
+          link: '/guide/parallel-output',
+          text: 'Output During Parallel Execution',
+        },
+        {
+          link: '/guide/parallel-input',
+          text: 'Input During Parallel Execution',
+        },
+        {
+          link: '/guide/errors',
+          text: 'Errors in Recipes',
+        },
+        {
+          link: '/guide/interrupts',
+          text: 'Interrupting or Killing make',
+        },
+        {
+          link: '/guide/recursion',
+          text: 'Recursive Use of make',
+        },
+        {
+          link: '/guide/make-variable',
+          text: 'How the MAKE Variable Works',
+        },
+        {
+          link: '/guide/variables-recursion',
+          text: 'Communicating Variables to a Sub-make',
+        },
+        {
+          link: '/guide/options-recursion',
+          text: 'Communicating Options to a Sub-make',
+        },
+        {
+          link: '/guide/the-option',
+          text: 'The --print-directory Option',
+        },
+        {
+          link: '/guide/canned-recipes',
+          text: 'Defining Canned Recipes',
+        },
+        {
+          link: '/guide/empty-recipes',
+          text: 'Using Empty Recipes',
+        },
+      ],
+    },
   ]
 }
