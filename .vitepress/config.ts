@@ -56,5 +56,40 @@ function sidebarGuide() {
         },
       ],
     },
+    {
+      collapsed: false,
+      link : '/guide/introduction',
+      text: 'An Introduction to Makefiles',
+      items: [
+        {
+          link: '/guide/rule-introduction',
+          text: 'What a Rule Looks Like',
+        },
+        {
+          link: '/guide/simple-makefile',
+          text: 'A Simple Makefile',
+        },
+        {
+          link: '/guide/how-make-works',
+          text: 'How make Processes a Makefile',
+        },
+        {
+          link: '/guide/variables-simplify',
+          text: 'Variables Make Makefiles Simpler',
+        },
+        {
+          link: '/guide/make-deduces',
+          text: 'Letting make Deduce the Recipes',
+        },
+        {
+          link: '/guide/combine-by-prerequisite',
+          text: 'Another Style of Makefile',
+        },
+        {
+          link: '/guide/cleanup',
+          text: 'Rules for Cleaning the Directory',
+        },
+      ],
+    },
   ]
 }
