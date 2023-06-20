@@ -16,7 +16,7 @@ Handling recursive `make` invocations raises issues for parallel execution.
 For more information on this, see [Communicating Options to a Sub-`make`](./options-recursion).
 
 If a recipe fails (is killed by a signal or exits with a nonzero status), and errors are not ignored for that recipe (see [Errors in Recipes](./errors)), the remaining recipe lines to remake the same target will not be run.
-If a recipe fails and the `-k` or `--keep-going` option was not given (see [Summary of Options](../running/options-summary)), `make` aborts execution.
+If a recipe fails and the `-k` or `--keep-going` option was not given (see [Summary of Options](./options-summary)), `make` aborts execution.
 If make terminates for any reason (including a signal) with child processes running, it waits for them to finish before actually exiting.
 
 When the system is heavily loaded, you will probably want to run fewer jobs than when it is lightly loaded.

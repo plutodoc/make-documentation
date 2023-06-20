@@ -1,11 +1,11 @@
 # 5.7.2 Communicating Variables to a Sub-`make`
 
 Variable values of the top-level `make` can be passed to the sub-`make` through the environment by explicit request.
-These variables are defined in the sub-`make` as defaults, but they do not override variables defined in the makefile used by the sub-`make` unless you use the `-e` switch (see [Summary of Options](../running/options-summary)).
+These variables are defined in the sub-`make` as defaults, but they do not override variables defined in the makefile used by the sub-`make` unless you use the `-e` switch (see [Summary of Options](./options-summary)).
 
 To pass down, or _export_, a variable, `make` adds the variable and its value to the environment for running each line of the recipe.
 The sub-`make`, in turn, uses the environment to initialize its table of variable values.
-See [Variables from the Environment](../using-variables/environment).
+See [Variables from the Environment](./environment).
 
 Except by explicit request, `make` exports a variable only if it is either defined in the environment initially or set on the command line, and if its name consists only of letters, numbers, and underscores.
 Some shells cannot cope with environment variable names consisting of characters other than letters, numbers, and underscores.
@@ -20,7 +20,7 @@ The special variable `MAKEFLAGS` is always exported (unless you unexport it). `M
 `make` automatically passes down variable values that were defined on the command line, by putting them in the `MAKEFLAGS` variable.
 See [Communicating Options to a Sub-`make`](./options-recursion).
 
-Variables are _not_ normally passed down if they were created by default by `make` (see [Variables Used by Implicit Rules](../implicit-rules/implicit-variables)).
+Variables are _not_ normally passed down if they were created by default by `make` (see [Variables Used by Implicit Rules](./implicit-variables)).
 The sub-`make` will define these for itself.
 
 If you want to export specific variables to a sub-`make`, use the `export` directive, like this:
@@ -76,7 +76,7 @@ variable += value
 export variable
 ```
 
-See [Appending More Text to Variables](../using-variables/appending).
+See [Appending More Text to Variables](./appending).
 
 You may notice that the `export` and `unexport` directives work in `make` in the same way they work in the shell, `sh`.
 
@@ -112,11 +112,11 @@ The value is `0` for the top-level `make`;
 `1` for a sub-`make`, `2` for a sub-sub-`make`, and so on.
 The incrementation happens when `make` sets up the environment for a recipe.
 
-The main use of `MAKELEVEL` is to test it in a conditional directive (see [Conditional Parts of Makefiles](../conditionals));
+The main use of `MAKELEVEL` is to test it in a conditional directive (see [Conditional Parts of Makefiles](./conditionals));
 this way you can write a makefile that behaves one way if run recursively and another way if run directly by you.
 
 You can use the variable `MAKEFILES` to cause all sub-`make` commands to use additional makefiles.
 The value of `MAKEFILES` is a whitespace-separated list of file names.
 This variable, if defined in the outer-level makefile, is passed down through the environment;
 then it serves as a list of extra makefiles for the sub-`make` to read before the usual or specified ones.
-See [The Variable `MAKEFILES`](../makefiles/makefiles-variable).
+See [The Variable `MAKEFILES`](./makefiles-variable).

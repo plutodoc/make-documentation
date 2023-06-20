@@ -8,7 +8,7 @@ The default value of `.SHELLFLAGS` is `-c` normally, or `-ec` in POSIX-conformin
 Unlike most variables, the variable `SHELL` is never set from the environment.
 This is because the `SHELL` environment variable is used to specify your personal choice of shell program for interactive use.
 It would be very bad for personal choices like this to affect the functioning of makefiles.
-See [Variables from the Environment](../using-variables/environment).
+See [Variables from the Environment](./environment).
 
 Furthermore, when you do set `SHELL` in your makefile that value is _not_ exported in the environment to recipe lines that `make` invokes.
 Instead, the value inherited from the user's environment, if any, is exported.

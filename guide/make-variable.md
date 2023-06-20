@@ -13,13 +13,13 @@ If you use a special version of `make` to run the top-level makefile, the same s
 
 As a special feature, using the variable `MAKE` in the recipe of a rule alters the effects of the `-t` (`--touch`), `-n` (`--just-print`), or `-q` (`--question`) option.
 Using the `MAKE` variable has the same effect as using a `+` character at the beginning of the recipe line.
-See [Instead of Executing the Recipes](../running/instead-of-execution).
+See [Instead of Executing the Recipes](./instead-of-execution).
 This special feature is only enabled if the `MAKE` variable appears directly in the recipe: it does not apply if the `MAKE` variable is referenced through expansion of another variable.
 In the latter case you must use the `+` token to get these special effects.
 
 Consider the command `make -t` in the above example.
 (The `-t` option marks targets as up to date without actually running any recipes;
-see [Instead of Execution](../running/instead-of-execution).)
+see [Instead of Execution](./instead-of-execution).)
 Following the usual definition of `-t`, a `make -t` command in the example would create a file named subsystem and do nothing else.
 What you really want it to do is run `cd subdir && make -t`;
 but that would require executing the recipe, and `-t` says not to execute recipes.

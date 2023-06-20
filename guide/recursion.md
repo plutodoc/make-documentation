@@ -10,7 +10,7 @@ subsystem:
         cd subdir && $(MAKE)
 ```
 
-or, equivalently, this (see [Summary of Options](../running/options-summary)):
+or, equivalently, this (see [Summary of Options](./options-summary)):
 
 ```makefile
 subsystem:
@@ -18,7 +18,7 @@ subsystem:
 ```
 
 You can write recursive `make` commands just by copying this example, but there are many things to know about how they work and why, and about how the sub-`make` relates to the top-level `make`.
-You may also find it useful to declare targets that invoke recursive `make` commands as `.PHONY` (for more discussion on when this is useful, see [Phony Targets](../rules/phony-targets)).
+You may also find it useful to declare targets that invoke recursive `make` commands as `.PHONY` (for more discussion on when this is useful, see [Phony Targets](./phony-targets)).
 
 For your convenience, when GNU `make` starts (after it has processed any `-C` options) it sets the variable `CURDIR` to the pathname of the current working directory.
 This value is never touched by `make` again: in particular note that if you include files from other directories the value of `CURDIR` does not change.

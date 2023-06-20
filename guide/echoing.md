@@ -12,9 +12,9 @@ Typically you would use this for a command whose only effect is to print somethi
 ```
 
 When `make` is given the flag `-n` or `--just-print` it only echoes most recipes, without executing them.
-See [Summary of Options](../running/options-summary).
+See [Summary of Options](./options-summary).
 In this case even the recipe lines starting with `@` are printed.
 This flag is useful for finding out which recipes `make` thinks are necessary without actually doing them.
 
 The `-s` or `--silent` flag to `make` prevents all echoing, as if all recipes started with `@`.
-A rule in the makefile for the special target `.SILENT` without prerequisites has the same effect (see [Special Built-in Target Names](../rules/special-targets)).
+A rule in the makefile for the special target `.SILENT` without prerequisites has the same effect (see [Special Built-in Target Names](./special-targets)).

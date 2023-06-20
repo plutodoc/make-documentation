@@ -4,11 +4,11 @@ One of the few ways in which `make` does interpret recipes is checking for a bac
 As in normal makefile syntax, a single logical recipe line can be split into multiple physical lines in the makefile by placing a backslash before each newline.
 A sequence of lines like this is considered a single recipe line, and one instance of the shell will be invoked to run it.
 
-However, in contrast to how they are treated in other places in a makefile (see [Splitting Long Lines](../makefiles/splitting-lines)), backslash/newline pairs are _not_ removed from the recipe.
+However, in contrast to how they are treated in other places in a makefile (see [Splitting Long Lines](./splitting-lines)), backslash/newline pairs are _not_ removed from the recipe.
 Both the backslash and the newline characters are preserved and passed to the shell.
 How the backslash/newline is interpreted depends on your shell.
 If the first character of the next line after the backslash/newline is the recipe prefix character (a tab by default;
-see [Special Variables](../using-variables/special-variables)), then that character (and only that character) is removed.
+see [Special Variables](./special-variables)), then that character (and only that character) is removed.
 Whitespace is never added to the recipe.
 
 For example, the recipe for the all target in this makefile:
@@ -27,7 +27,7 @@ space
 
 consists of four separate shell commands where the output is:
 
-```text
+```
 nospace
 nospace
 one space
@@ -80,4 +80,4 @@ we will get output like this:
 hello world
 ```
 
-If you like, you can also use target-specific variables (see [Target-specific Variable Values](../using-variables/target-specific)) to obtain a tighter correspondence between the variable and the recipe that uses it.
+If you like, you can also use target-specific variables (see [Target-specific Variable Values](./target-specific)) to obtain a tighter correspondence between the variable and the recipe that uses it.

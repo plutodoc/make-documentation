@@ -6,7 +6,7 @@ Thus, if you do `make -ks` then `MAKEFLAGS` gets the value `ks`.
 
 As a consequence, every sub-`make` gets a value for `MAKEFLAGS` in its environment.
 In response, it takes the flags from that value and processes them as if they had been given as arguments.
-See [Summary of Options](../running/options-summary).
+See [Summary of Options](./options-summary).
 This means that, unlike other environment variables, `MAKEFLAGS` specified in the environment take precedence over `MAKEFLAGS` specified in the makefile.
 
 The value of `MAKEFLAGS` is a possibly empty group of characters representing single-letter options that take no argument, followed by a space and any options that take arguments or which have long option names.
@@ -15,7 +15,7 @@ If there are no single-letter options on the command line, then the value of `MA
 
 Likewise variables defined on the command line are passed to the sub-`make` through `MAKEFLAGS`.
 Words in the value of `MAKEFLAGS` that contain `=`, `make` treats as variable definitions just as if they appeared on the command line.
-See [Overriding Variables](../running/overriding).
+See [Overriding Variables](./overriding).
 
 The options `-C`, `-f`, `-o`, and `-W` are not put into `MAKEFLAGS`;
 these options are not passed down.
@@ -23,7 +23,7 @@ these options are not passed down.
 The `-j` option is a special case (see [Parallel Execution](./parallel)).
 If you set it to some numeric value `N` and your operating system supports it (most any UNIX system will;
 others typically won't), the parent `make` and all the sub-`make`s will communicate to ensure that there are only `N` jobs running at the same time between them all.
-Note that any job that is marked recursive (see [Instead of Executing Recipes](../running/instead-of-execution)) doesn't count against the total jobs (otherwise we could get `N` sub-`make`s running and have no slots left over for any real work!)
+Note that any job that is marked recursive (see [Instead of Executing Recipes](./instead-of-execution)) doesn't count against the total jobs (otherwise we could get `N` sub-`make`s running and have no slots left over for any real work!)
 
 If your operating system doesn't support the above communication, then no `-j` is added to `MAKEFLAGS`, so that sub-`make`s run in non-parallel mode.
 If the `-j` option were passed down to sub-`make`s you would get many more jobs running in parallel than you asked for.
@@ -61,7 +61,7 @@ but now `MAKEFLAGS` makes this usage redundant.
 If you want your makefiles to be compatible with old `make` programs, use this technique;
 it will work fine with more modern `make` versions too.
 
-The `MAKEFLAGS` variable can also be useful if you want to have certain options, such as `-k` (see [Summary of Options](../running/options-summary)), set each time you run `make`.
+The `MAKEFLAGS` variable can also be useful if you want to have certain options, such as `-k` (see [Summary of Options](./options-summary)), set each time you run `make`.
 You simply put a value for `MAKEFLAGS` in your environment.
 You can also set `MAKEFLAGS` in a makefile, to specify additional flags that should also be in effect for that makefile.
 (Note that you cannot use `MFLAGS` this way.

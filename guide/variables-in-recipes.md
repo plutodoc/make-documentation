@@ -1,6 +1,6 @@
 # 5.1.2 Using Variables in Recipes
 
-The other way in which `make` processes recipes is by expanding any variable references in them (see [Basics of Variable References](../using-variables/reference)).
+The other way in which `make` processes recipes is by expanding any variable references in them (see [Basics of Variable References](./reference)).
 This occurs after make has finished reading all the makefiles and the target is determined to be out of date;
 so, the recipes for targets which are not rebuilt are never expanded.
 

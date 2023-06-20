@@ -34,7 +34,7 @@ No further recipes will be executed for these targets, since their preconditions
 Normally `make` gives up immediately in this circumstance, returning a nonzero status.
 However, if the `-k` or `--keep-going` flag is specified, `make` continues to consider the other prerequisites of the pending targets, remaking them if necessary, before it gives up and returns nonzero status.
 For example, after an error in compiling one object file, `make -k` will continue compiling other object files even though it already knows that linking them will be impossible.
-See [Summary of Options](../running/options-summary).
+See [Summary of Options](./options-summary).
 
 The usual behavior assumes that your purpose is to get the specified targets up to date;
 once `make` learns that this is impossible, it might as well report the failure immediately.
