@@ -138,5 +138,112 @@ function sidebarGuide() {
         },
       ],
     },
+    {
+      collapsed: false,
+      link: '/guide/rules',
+      text: 'Writing Rules',
+      items: [
+        {
+          link: '/guide/rule-example',
+          text: 'Rule Example',
+        },
+        {
+          link: '/guide/rule-syntax',
+          text: 'Rule Syntax',
+        },
+        {
+          link: '/guide/prerequisite-types',
+          text: 'Types of Prerequisites',
+        },
+        {
+          link: '/guide/wildcards',
+          text: 'Using Wildcard Characters in File Names',
+        },
+        {
+          link: '/guide/wildcard-examples',
+          text: 'Wildcard Examples',
+        },
+        {
+          link: '/guide/wildcard-pitfall',
+          text: 'Pitfalls of Using Wildcards',
+        },
+        {
+          link: '/guide/wildcard-function',
+          text: 'The Function wildcard',
+        },
+        {
+          link: '/guide/directory-search',
+          text: 'Searching Directories for Prerequisites',
+        },
+        {
+          link: '/guide/general-search',
+          text: 'VPATH: Search Path for All Prerequisites',
+        },
+        {
+          link: '/guide/selective-search',
+          text: 'The vpath Directive',
+        },
+        {
+          link: '/guide/search-algorithm',
+          text: 'How Directory Searches are Performed',
+        },
+        {
+          link: '/guide/recipes-search',
+          text: 'Writing Recipes with Directory Search',
+        },
+        {
+          link: '/guide/implicit-search',
+          text: 'Directory Search and Implicit Rules',
+        },
+        {
+          link: '/guide/libraries-search',
+          text: 'Directory Search for Link Libraries',
+        },
+        {
+          link: '/guide/phony-targets',
+          text: 'Phony Targets',
+        },
+        {
+          link: '/guide/force-targets',
+          text: 'Rules without Recipes or Prerequisites',
+        },
+        {
+          link: '/guide/empty-targets',
+          text: 'Empty Target Files to Record Events',
+        },
+        {
+          link: '/guide/special-targets',
+          text: 'Special Built-in Target Names',
+        },
+        {
+          link: '/guide/multiple-targets',
+          text: 'Multiple Targets in a Rule',
+        },
+        {
+          link: '/guide/multiple-rules',
+          text: 'Multiple Rules for One Target',
+        },
+        {
+          link: '/guide/static-pattern',
+          text: 'Static Pattern Rules',
+        },
+        {
+          link: '/guide/static-usage',
+          text: 'Syntax of Static Pattern Rules',
+        },
+        {
+          link: '/guide/static-versus-implicit',
+          text: 'Static Pattern Rules versus Implicit Rules',
+        },
+        {
+          link: '/guide/double-colon',
+          text: 'Double-Colon Rules',
+        },
+        {
+          link: '/guide/automatic-prerequisites',
+          text: 'Generating Prerequisites Automatically',
+        },
+      ],
+    },
   ]
 }
