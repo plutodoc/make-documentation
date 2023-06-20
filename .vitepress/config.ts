@@ -332,5 +332,92 @@ function sidebarGuide() {
         },
       ],
     },
+    {
+      collapsed: false,
+      link: '/guide/using-variables',
+      text: 'How to Use Variables',
+      items: [
+        {
+          link: '/guide/reference',
+          text: 'Basics of Variable References',
+        },
+        {
+          link: '/guide/flavors',
+          text: 'The Two Flavors of Variables',
+        },
+        {
+          link: '/guide/recursive-assignment',
+          text: 'Recursively Expanded Variable Assignment',
+        },
+        {
+          link: '/guide/simple-assignment',
+          text: 'Simply Expanded Variable Assignment',
+        },
+        {
+          link: '/guide/immediate-assignment',
+          text: 'Immediately Expanded Variable Assignment',
+        },
+        {
+          link: '/guide/conditional-assignment',
+          text: 'Conditional Variable Assignment',
+        },
+        {
+          link: '/guide/advanced',
+          text: 'Advanced Features for Reference to Variables',
+        },
+        {
+          link: '/guide/substitution-refs',
+          text: 'Substitution References',
+        },
+        {
+          link: '/guide/computed-names',
+          text: 'Computed Variable Names',
+        },
+        {
+          link: '/guide/values',
+          text: 'How Variables Get Their Values',
+        },
+        {
+          link: '/guide/setting',
+          text: 'Setting Variables',
+        },
+        {
+          link: '/guide/appending',
+          text: 'Appending More Text to Variables',
+        },
+        {
+          link: '/guide/override-directive',
+          text: 'The override Directive',
+        },
+        {
+          link: '/guide/multi-line',
+          text: 'Defining Multi-Line Variables',
+        },
+        {
+          link: '/guide/undefine-directive',
+          text: 'Undefining Variables',
+        },
+        {
+          link: '/guide/environment',
+          text: 'Variables from the Environment',
+        },
+        {
+          link: '/guide/target-specific',
+          text: 'Target-specific Variable Values',
+        },
+        {
+          link: '/guide/pattern-specific',
+          text: 'Pattern-specific Variable Values',
+        },
+        {
+          link: '/guide/suppressing-inheritance',
+          text: 'Suppressing Inheritance',
+        },
+        {
+          link: '/guide/special-variables',
+          text: 'Other Special Variables',
+        },
+      ],
+    },
   ]
 }
