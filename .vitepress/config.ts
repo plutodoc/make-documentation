@@ -41,5 +41,20 @@ function sidebarGuide() {
       link: '/guide/intro',
       text: 'Intro',
     },
+    {
+      collapsed: false,
+      link: '/guide/overview',
+      text: 'Overview of make',
+      items: [
+        {
+          link: '/guide/reading',
+          text: 'How to Read This Manual',
+        },
+        {
+          link: '/guide/bugs',
+          text: 'Problems and Bugs',
+        },
+      ],
+    },
   ]
 }
