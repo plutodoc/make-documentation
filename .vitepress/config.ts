@@ -58,7 +58,7 @@ function sidebarGuide() {
     },
     {
       collapsed: false,
-      link : '/guide/introduction',
+      link: '/guide/introduction',
       text: 'An Introduction to Makefiles',
       items: [
         {
@@ -88,6 +88,53 @@ function sidebarGuide() {
         {
           link: '/guide/cleanup',
           text: 'Rules for Cleaning the Directory',
+        },
+      ],
+    },
+    {
+      collapsed: false,
+      link: '/guide/makefiles',
+      text: 'Writing Makefiles',
+      items: [
+        {
+          link: '/guide/makefile-contents',
+          text: 'What Makefiles Contain',
+        },
+        {
+          link: '/guide/splitting-lines',
+          text: 'Splitting Long Lines',
+        },
+        {
+          link: '/guide/makefile-names',
+          text: 'What Name to Give Your Makefile',
+        },
+        {
+          link: '/guide/include',
+          text: 'Including Other Makefiles',
+        },
+        {
+          link: '/guide/makefiles-variable',
+          text: 'The Variable MAKEFILES',
+        },
+        {
+          link: '/guide/remaking-makefiles',
+          text: 'How Makefiles Are Remade',
+        },
+        {
+          link: '/guide/overriding-makefiles',
+          text: 'Overriding Part of Another Makefile',
+        },
+        {
+          link: '/guide/reading-makefiles',
+          text: 'How make Reads a Makefile',
+        },
+        {
+          link: '/guide/parsing-makefiles',
+          text: 'How Makefiles Are Parsed',
+        },
+        {
+          link: '/guide/secondary-expansion',
+          text: 'Secondary Expansion',
         },
       ],
     },
